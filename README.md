@@ -306,7 +306,6 @@ Regular Price after discount: 90.0 CHF
 ---------------
 Premium discount calculated: 40.0 CHF (20%)
 Premium Price after discount: 160.0 CHF
-
 ```
 
 ## 9. Weiterführende Informationen
