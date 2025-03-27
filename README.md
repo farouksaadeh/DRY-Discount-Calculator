@@ -39,7 +39,7 @@ Dieses Repository beinhaltet zwei Java-Beispiele für eine einfache Rabattberech
 Ich betrachte das **DRY (Don't Repeat Yourself)**-Prinzip. Es besagt, dass jede Wissenseinheit im Code nur einmal existieren sollte, um Wartungsaufwand und Fehleranfälligkeit zu reduzieren.
 
 **Design Pattern:**  
-Das **Strategy Pattern** erlaubt es, verschiedene Algorithmen (hier: Rabattberechnungen) in separate Klassen auszulagern, die alle ein gemeinsames Interface implementieren. Dadurch wird vermieden, dass wir denselben Code in mehreren Methoden duplizieren.
+Das **Strategy Pattern** erlaubt es, verschiedene Algorithmen (hier: Rabattberechnungen) in separate Klassen auszulagern, die alle ein gemeinsames Interface implementieren. Dadurch wird vermieden, dass ich denselben Code in mehreren Methoden dupliziere.
 
 ---
 
@@ -58,7 +58,8 @@ Das **Strategy Pattern** erlaubt es, verschiedene Algorithmen (hier: Rabattberec
    In deiner IDE oder über das Terminal:
 
     ```bash
-    cd DRY-Discount-Calculator javac ./badcode/.java ./goodcode/.java ./goodcode/strategy/*.java
+   cd DRY-Discount-Calculator
+   javac ./badcode/*.java ./goodcode/*.java ./goodcode/strategy/*.java
     ```
 
 
