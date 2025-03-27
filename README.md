@@ -1,24 +1,24 @@
-# DRY Discount Calculator
+# DRY & Strategy Pattern Discount Calculator
 
 ## 1. Konzept
 
 ### a) Zweck des Projekts (What is the purpose of the project?)
-In diesem Projekt geht es darum, das **DRY (Don't Repeat Yourself)**-Prinzip anhand einer einfachen Rabattberechnung zu demonstrieren. Wir wollen zeigen, wie man Code-Duplikation vermeidet, indem wir einerseits ein schlechtes Beispiel (mit dupliziertem Code) und andererseits ein gutes Beispiel (unter Verwendung des **Strategy Patterns**) gegenüberstellen.
+In diesem Projekt demonstriere ich das **DRY (Don't Repeat Yourself)**-Prinzip anhand einer einfachen Rabattberechnung. Ich zeige ein schlechtes Beispiel mit dupliziertem Code und ein gutes Beispiel, bei dem ich das **Strategy Pattern** einsetze, um Rabattberechnungen in separate, austauschbare Module zu kapseln – so erhalte ich einen wartbaren Code.
 
 ### b) Warum ist das Projekt nützlich? (Why is the project useful?)
-- **Bessere Wartbarkeit**: Durch die Einhaltung des DRY-Prinzips müssen Änderungen nur an einer Stelle vorgenommen werden.
-- **Leichteres Verständnis**: Das Projekt verdeutlicht, wie man wiederkehrende Logik sauber kapseln kann.
-- **Erweiterbarkeit**: Neue Rabattstrategien können leicht ergänzt werden, ohne dass bestehender Code dupliziert oder stark verändert werden muss.
+- **Bessere Wartbarkeit:** Änderungen an der Rabattlogik müssen nur an einer zentralen Stelle vorgenommen werden, was den Wartungsaufwand deutlich reduziert.
+- **Leichteres Verständnis:** Durch die Trennung der Logik in unterschiedliche Klassen wird der Code übersichtlicher und leichter nachvollziehbar.
+- **Erweiterbarkeit:** Neue Rabattstrategien können einfach als zusätzliche Strategie-Klassen implementiert werden, ohne den bestehenden Code zu verändern.
 
 ### c) Wie können Nutzer*innen mitmachen? (How can users participate?)
-- **Issues** erstellen: Für Fehlermeldungen, Funktionswünsche oder allgemeines Feedback.
-- **Pull Requests** einreichen: Eigene Ideen und Verbesserungen können gerne in Form von Pull Requests eingebracht werden.
-- **Diskussionen**: Fragen oder Vorschläge können in den Discussions oder Issues gestellt und diskutiert werden.
+- **Issues erstellen:** Für Fehlermeldungen, Funktionswünsche oder allgemeines Feedback.
+- **Pull Requests einreichen:** Eigene Ideen und Verbesserungen können gerne in Form von Pull Requests eingebracht werden.
+- **Diskussionen:** Fragen oder Vorschläge können in den Discussions oder Issues gestellt und diskutiert werden.
 
 ### d) Wo gibt es Support? (Where to get support?)
-- **GitHub-Issues**: Stelle deine Fragen oder Probleme als Issue.
-- **Dokumentation**: Dieses README enthält bereits die wichtigsten Informationen.
-- **Community**: Austauschen und Vernetzen kannst du dich mit anderen über die GitHub-Discussions.
+- **GitHub-Issues:** Stelle deine Fragen oder Probleme als Issue.
+- **Dokumentation:** Dieses README enthält bereits die wichtigsten Informationen.
+- **Community:** Tausche dich über GitHub-Discussions mit anderen Nutzer*innen und Entwickler*innen aus.
 
 ### e) Wer pflegt das Projekt? (Who is maintaining the project?)
 - **Maintainer:** Farouk Saadeh ([`@farouksaadeh`](https://github.com/farouksaadeh))
@@ -36,7 +36,7 @@ Dieses Repository beinhaltet zwei Java-Beispiele für eine einfache Rabattberech
     - Hält das **DRY-Prinzip** ein, indem das **Strategy Pattern** verwendet wird.
 
 **Design Principle:**  
-Wir betrachten das **DRY (Don't Repeat Yourself)**-Prinzip. Es besagt, dass jede Wissenseinheit im Code nur einmal existieren sollte, um Wartungsaufwand und Fehleranfälligkeit zu reduzieren.
+Ich betrachte das **DRY (Don't Repeat Yourself)**-Prinzip. Es besagt, dass jede Wissenseinheit im Code nur einmal existieren sollte, um Wartungsaufwand und Fehleranfälligkeit zu reduzieren.
 
 **Design Pattern:**  
 Das **Strategy Pattern** erlaubt es, verschiedene Algorithmen (hier: Rabattberechnungen) in separate Klassen auszulagern, die alle ein gemeinsames Interface implementieren. Dadurch wird vermieden, dass wir denselben Code in mehreren Methoden duplizieren.
